@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        @@include('./blocks/header.html')
+        <h1>index</h1>
+        @@include('./blocks/nav.html') @@include('./blocks/footer.html')
+
+        <picture>
+            <!-- <source -->
+            <!--     type="image/avif" -->
+            <!--     srcset=" -->
+            <!--         img/banner.avif   1x, -->
+            <!--         img/banner@2.avif 2x, -->
+            <!--         img/banner@3.avif 3x -->
+            <!--     " -->
+            <!-- /> -->
+            <source
+                type="image/webp"
+                srcset="
+                    img/banner.webp   1x,
+                    img/banner@2.webp 2x,
+                    img/banner@3.webp 3x
+                "
+            />
+            <img
+                width="680"
+                height="550"
+                alt=""
+                loading="lazy"
+                src="./img/banner.jpg"
+                srcset="./img/banner@2.jpg 2x"
+                srcset="./img/banner@3.jpg 3x"
+            />
+        </picture>
+
+        <img src="./img/banner.jpg" alt="">
+        
+        <div class="bg-img">
+
+        </div>
+
+
+        </div> 
+
+        <script src="js/index.bundle.js"></script>
+    </body>
+</html>
