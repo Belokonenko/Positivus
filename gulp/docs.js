@@ -17,7 +17,6 @@ const autoprefixer = require('gulp-autoprefixer') ;
 const csso = require('gulp-csso');
 const htmlclean = require('gulp-htmlclean');
 const webp = require("gulp-webp") ;
-const webpHTML = require("gulp-webp-html");
 
 gulp.task("html:docs", function () {
     return gulp
@@ -39,7 +38,6 @@ gulp.task("html:docs", function () {
                 basepath: "@file",
             })
         )
-        .pipe(webpHTML())
         .pipe(htmlclean())
         .pipe(gulp.dest("./docs/"));
 });

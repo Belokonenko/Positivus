@@ -15,7 +15,6 @@ const changed = require("gulp-changed");
 
 
 const webp = require("gulp-webp") ;
-const webpHTML = require("gulp-webp-html");
 
 gulp.task("html:dev", function () {
     return gulp
@@ -37,7 +36,7 @@ gulp.task("html:dev", function () {
                 basepath: "@file",
             })
         )
-        .pipe(webpHTML())
+        // .pipe(webpHTML())
         .pipe(gulp.dest("./build/"));
 });
 
