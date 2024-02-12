@@ -1,9 +1,8 @@
 .services {
-    &__icon-box {
-        background-color: var(--color-dark);
-    }
-
-    &__icon {
-        fill: #fff; 
+    
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px ;
     }
 }
