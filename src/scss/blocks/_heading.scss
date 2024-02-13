@@ -1,0 +1,21 @@
+.heading {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+    
+    @include mobile {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__title {
+    }
+
+    &__description {
+        max-width: 580px;
+        @include mobile {
+            text-align: center;
+        }
+    }
+}
