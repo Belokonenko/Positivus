@@ -12,26 +12,27 @@
 
 
     &:hover {
-        box-shadow: var(--shadow-hover);
-        scale: 1.005;
+        scale: 1.05;
     }
 
     &:active {
-        box-shadow: var(--shadow);
         scale: 1;
     }
 
     &--dark {
         background-color: var(--color-dark);
     }
+    
     &--accent {
 
         background-color: var(--color-accent);
     }
+    
     &--light {
 
         background-color: var(--color-light);
     }
+    
     @include mobile {
         gap: 27px;
     }
@@ -66,9 +67,10 @@
     &__link-wrap {
         display: flex;
         gap: 15px;
-        align-items: center;
+        align-items: flex-end;
         grid-column: 1/2;
         grid-row: 2/3;
+        align-self: flex-end;
     }
 
     &__link-wrap::before {

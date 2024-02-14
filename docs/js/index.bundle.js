@@ -1,1 +1,0 @@
-!function(){"use strict";console.log("index page js"),console.log("import const form modules >>> hello, world"),function(){for(let o=0;o<10;o++)console.log("module")}(),console.log(3),console.log(3.14159)}();
