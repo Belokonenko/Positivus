@@ -8,6 +8,8 @@
   background-color: var(--color-dark);
   border: var(--border);
   border-radius: var(--border-radius);
+  line-height: 0.7;
+  white-space: nowrap;
 
   @include hover {
     color: var(--color-dark);
